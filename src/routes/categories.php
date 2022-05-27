@@ -2,14 +2,22 @@
 
 /* POST get category*/
 
-$app->get('/api/getCategories', function ($request, $response, $args) {
+$app->post('/api/getCategories', function ($request, $response, $args) {
 
-    $sql = "SELECT * from categories";
+
 
     try {
         $db = new db();
-        $db = $db->connectDb();
-        $resultado = $db->query($sql);
+        $conection = $db->connectDb();
+        $data = $request->getParsedBody();
+
+        $id_user = $conection->real_escape_string($data['id']);
+        
+
+        $sql= "SELECT * FROM categories WHERE idParentCategory = $id_user";
+
+
+        $resultado = $conection->query($sql);
 
         if ($resultado->num_rows > 0) {
             $arrayData = [];

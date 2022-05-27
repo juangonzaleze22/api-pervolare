@@ -31,7 +31,8 @@ $app->post('/api/login', function ($request, $response, $args) {
 
             $response->getBody()->write(json_encode(
                 [
-                    "status" => "errorPassword"
+                    "status" => "errorPassword",
+                    "password" => $claveEncp
 
                 ]
             ));

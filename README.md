@@ -32,7 +32,7 @@ The PHP / Slim sample project is now up and running! Access it at http://localho
 
 - Email: admin@admin.com / Password: $admin22
 - Email: testing@testing.com / Password: /testing
-- 
+
 
 ## Routes used
 

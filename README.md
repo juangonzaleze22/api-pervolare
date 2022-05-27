@@ -23,20 +23,21 @@ once inside we will have to install the dependencies using
 ## Start serv local
 
 make sure to turn on your local server (XAMPP)
--APACHE
--MySQL
+- APACHE
+- MySQL
 
 The PHP / Slim sample project is now up and running! Access it at http://localhost/api-pervolare/api/.
 
 ## Routes used
 
--Login 
+- Login 
 
 ```
 http://localhost/api-pervolare/api/login/ 
 
-method: post
-params: {
+method = post
+
+params = {
   email: string,
   password: string
 }

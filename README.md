@@ -18,7 +18,7 @@ and clone the prject using
 ## Install dependence
 
 once inside we will have to install the dependencies using 
-```composer update```
+```composer install```
 
 ## Start serv local
 
@@ -27,6 +27,12 @@ make sure to turn on your local server (XAMPP)
 - MySQL
 
 The PHP / Slim sample project is now up and running! Access it at http://localhost/api-pervolare/api/.
+
+## Account access
+
+- Email: admin@admin.com / Password: $admin22
+- Email: testing@testing.com / Password: /testing
+- 
 
 ## Routes used
 

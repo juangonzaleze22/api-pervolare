@@ -33,13 +33,70 @@ The PHP / Slim sample project is now up and running! Access it at http://localho
 - Login 
 
 ```
-http://localhost/api-pervolare/api/login/ 
+http://localhost/api-pervolare/api/login
 
 method = post
 
 params = {
   email: string,
   password: string
+}
+
+```
+
+
+- Get Categories 
+
+```
+http://localhost/api-pervolare/api/getCategories
+
+method = get
+
+```
+
+- Create Category
+
+```
+http://localhost/api-pervolare/api/createCategory
+
+method = post
+
+params = {
+  idParentCategory: number,
+  code": string,
+  title": string,
+  description": string
+}
+
+```
+
+
+- Edit Category
+
+```
+http://localhost/api-pervolare/api/editCategory
+
+method = put
+
+params = {
+  id: number,
+  code": string,
+  title": string,
+  description": string
+}
+
+```
+
+
+- Delete Category
+
+```
+http://localhost/api-pervolare/api/deleteCategory
+
+method = post
+
+params = {
+  id: number
 }
 
 ```
